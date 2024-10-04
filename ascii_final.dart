@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'dart:math';
-import 'ascii_ANO.dart'; // Import the library that defines animasiAsciiText
+import 'ascii_ANO.dart'; 
 
 // Warna menggunakan kode ANSI
 const String reset = '\x1B[0m';
@@ -119,10 +119,10 @@ List<List<Point<int>>> generateLedakanPattern() {
     for (int angle = 0; angle < 360; angle += 10) {
       double radian = angle * pi / 180;
       int px = (radius * cos(radian)).round();
-      int py = (radius * sin(radian) / 2).round(); // Compress vertically
+      int py = (radius * sin(radian) / 2).round(); 
       points.add(Point(px, py));
 
-      // Add some randomness for a more natural look
+   
       if (Random().nextBool()) {
         int rx = px + Random().nextInt(3) - 1;
         int ry = py + Random().nextInt(3) - 1;
@@ -148,10 +148,9 @@ List<List<Point<int>>> generateLedakanDalamPattern() {
       double radian = angle * pi / 180;
       for (int r = 0; r <= radius; r += 2) {
         int px = (r * cos(radian)).round();
-        int py = (r * sin(radian) / 2).round(); // Compress vertically
+        int py = (r * sin(radian) / 2).round(); 
         points.add(Point(px, py));
 
-        // Add some randomness for a more natural look
         if (Random().nextBool()) {
           int rx = px + Random().nextInt(3) - 1;
           int ry = py + Random().nextInt(3) - 1;
