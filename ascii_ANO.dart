@@ -4,13 +4,13 @@ import 'dart:math';
 
 void animasiAsciiText() {
   List<String> text = [
-    'HH   HH   BBBBBB    DDDDDD   ',
-    'HH   HH   BB   BB   DD   DD  ',
-    'HH   HH   BB   BB   DD   DD  ',
-    'HHHHHHH   BBBBBB    DD   DD  ',
-    'HH   HH   BB   BB   DD   DD  ',
-    'HH   HH   BB   BB   DD   DD  ',
-    'HH   HH   BBBBBB    DDDDDD   ',
+    ' HH   HH   BBBBBB    DDDDDD   ',
+    ' HH   HH   BB   BB   DD   DD  ',
+    ' HH   HH   BB   BB   DD   DD  ',
+    ' HHHHHHH   BBBBBB    DD   DD  ',
+    ' HH   HH   BB   BB   DD   DD  ',
+    ' HH   HH   BB   BB   DD   DD  ',
+    ' HH   HH   BBBBBB    DDDDDD   ',
     '',
     '    AA      NN   NN    OOOO   ',
     '   AAAA     NNN  NN   OO  OO  ',
