@@ -96,14 +96,14 @@ Future<void> animasiLedakanKembangApi(String color, int x, int y) async {
 
   for (int i = 0; i < tahapanLedakan.length; i++) {
     tampilkanLedakan(color, bgColor, x, y, tahapanLedakan[i]);
-    await Future.delayed(Duration(milliseconds: 50));
+    await Future.delayed(Duration(milliseconds: 30));
 
     // Mulai menampilkan ledakan dalam setelah beberapa tahap
     if (i >= tahapanLedakan.length ~/ 2 && i < tahapanLedakanDalam.length) {
       tampilkanLedakan(color, bgColor, x, y,
           tahapanLedakanDalam[i - tahapanLedakan.length ~/ 2]);
     }
-    await Future.delayed(Duration(milliseconds: 50));
+    await Future.delayed(Duration(milliseconds: 30));
   }
 }
 
